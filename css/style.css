@@ -968,6 +968,12 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   font-weight: 700;
 }
+.blog__tab {
+  padding: 10px;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 5px;
+}
 .blog__adv-icons {
   padding: 30px 0 0 0;
 }
