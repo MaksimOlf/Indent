@@ -1,0 +1,149 @@
+.header {
+	flex: 0 0 auto;
+	&__topbar {
+		background: url("../img/jpg/top_bar.jpg") repeat;
+		height: 50px;
+	}
+	&__row {
+	}
+	&__icons {
+		height: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	&__icon {
+		margin-left: 20px;
+	}
+	&__icon a img{
+		transition: all 0.5s ease 0s;
+	}
+	&__icon a img:hover{
+		transform: scale(1.4);
+	}
+	&__navbar {
+		background: url("../img/jpg/nav_bar.jpg") repeat;
+	}
+	&__navbar-row {
+		height: 56px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__left {
+		display: flex;
+		align-items: center;
+		position: relative;
+	}
+	&__left:before {
+		position: absolute;
+		content: '';
+		top: -10px;
+		left: 10px;
+		width: 34px;
+		height: 34px;
+		background-color: #ea5a4b;
+	}
+	&__logo {
+		position: absolute;
+		top: 0;
+		left: 24px;
+		font-family: Bitter;
+		font-size: 24px;
+		line-height: 16px;
+		font-weight: 400;
+		color: #ffffff;
+	}
+	&__logo-text {
+		font-family: Bitter;
+		font-size: 24px;
+		line-height: 16px;
+		color: #252525;
+		padding-left: 55px;
+	}
+	&__logo-text span {
+		color: #ea5a4b;
+	}
+	&__menu {
+	}
+	&__list {
+		display: flex;
+		flex-direction: row;
+	}
+	&__link {
+		margin-left: 30px;
+	}
+	&__link:first-child {
+		margin-left: 0px;
+	}
+	&__link a{
+		font-size: 12px;
+		line-height: 16px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #252525;
+	}
+	&__link a:hover {
+		color: #ea5a4b;
+	}
+}
+
+.header__link.active_html a{
+	color: #ea5a4b;
+	font-size: 20px;
+}
+
+.header__photo {
+	background: url("../img/jpg/blog/blog_top.jpg") no-repeat;
+	width: 100%;
+	min-width: 100%;
+	height: 151px;
+	background-size: cover;
+	background-position: center center;
+}
+
+@media (max-width: 500px) {
+	.header {
+		&__link {
+		margin-left: 15px;
+		}
+		&__link a{
+			font-size: 12px;
+		}
+		&__link.active_html a{
+			font-size: 16px;
+		}
+		&__logo-text {
+			display: none;
+		}
+		&__logo {
+			top: -8px;
+			left: 20px;
+		}
+		&__left:before {
+			position: absolute;
+			content: '';
+			top: -17px;
+			left: 5px;
+			width: 34px;
+			height: 34px;
+			background-color: #ea5a4b;
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	.header {
+		&__logo {
+			display: none;
+		}
+		&__left:before {
+			display: none;
+		}
+		&__link {
+		margin-left: 20px;
+		}
+	}
+}
